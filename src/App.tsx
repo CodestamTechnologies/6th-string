@@ -1,7 +1,6 @@
-import React from 'react';
-import { Music, Star, Users, Calendar, Instagram, Phone, MapPin, PlayCircle, Mic, Drum, PartyPopper, Guitar, Youtube } from 'lucide-react';
-
+import { Calendar, Drum, Guitar, Instagram, MapPin, Mic, Music, PartyPopper, Phone, Youtube } from 'lucide-react';
 function App() {
+
   return (
     <div className="min-h-screen bg-zinc-50">
       {/* Hero Section */}
@@ -72,27 +71,21 @@ function App() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Meet The Band</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <TeamMember
-              image="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&q=80"
-              name="Rahul Kumar"
-              role="Lead Vocalist"
+              image="/gaurav_lead_G.png"
+              name="Gaurav"
+              role="Lead Guitarist"
               instrument={<Mic className="w-4 h-4" />}
             />
             <TeamMember
-              image="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&q=80"
-              name="Amit Singh"
-              role="Lead Guitarist"
+              image="/nihar_lead_B.jpg"
+              name="Nihar"
+              role="Lead Bassist"
               instrument={<Guitar className="w-4 h-4" />}
             />
             <TeamMember
-              image="https://images.unsplash.com/photo-1594835898547-e37191606e27?auto=format&fit=crop&q=80"
-              name="Priya Sharma"
-              role="Drummer"
-              instrument={<Drum className="w-4 h-4" />}
-            />
-            <TeamMember
-              image="https://images.unsplash.com/photo-1593697821252-0c9137d9fc45?auto=format&fit=crop&q=80"
-              name="Vikram Joshi"
-              role="Bass Guitarist"
+              image="/shubham_drums.jpg"
+              name="Shubham"
+              role="Drums"
               instrument={<Guitar className="w-4 h-4" />}
             />
           </div>
