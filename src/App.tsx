@@ -1,4 +1,5 @@
 import { Calendar, Drum, Guitar, Instagram, MapPin, Mic, Music, PartyPopper, Phone, Youtube } from 'lucide-react';
+import VideoDialog from './components/PerformanceButton';
 function App() {
 
   return (
@@ -6,14 +7,14 @@ function App() {
       {/* Hero Section */}
       <header className="relative h-screen">
         <div className="absolute inset-0">
-          <img 
+          <img
             src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80"
             alt="Band performance"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50"></div>
         </div>
-        
+
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-amber-600">
             6thString
@@ -25,18 +26,13 @@ function App() {
             Professional Live Band for Events & Shows in Ranchi, Jharkhand
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a 
+            <a
               href="#booking"
               className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors"
             >
               Book Now
             </a>
-            <a 
-              href="#performances"
-              className="border-2 border-white hover:bg-white/10 text-white px-8 py-3 rounded-full text-lg font-semibold transition-all"
-            >
-              Watch Performances
-            </a>
+            <VideoDialog videoUrl='/IMG_6379.MOV' />
           </div>
         </div>
       </header>
@@ -46,17 +42,17 @@ function App() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">Event Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <ServiceCard 
+            <ServiceCard
               icon={<PartyPopper className="w-8 h-8" />}
               title="Corporate Events"
               description="Elevate your corporate gatherings with our professional performance"
             />
-            <ServiceCard 
+            <ServiceCard
               icon={<Music className="w-8 h-8" />}
               title="Wedding Ceremonies"
               description="Create unforgettable moments with live music at your special day"
             />
-            <ServiceCard 
+            <ServiceCard
               icon={<Mic className="w-8 h-8" />}
               title="Private Parties"
               description="Transform your private events into extraordinary experiences"
@@ -156,8 +152,8 @@ function App() {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&q=80"
+              <img
+                src="/band.JPG"
                 alt="Band performance"
                 className="rounded-lg shadow-2xl"
               />
@@ -241,8 +237,8 @@ function ServiceCard({ icon, title, description }) {
 function TeamMember({ image, name, role, instrument }) {
   return (
     <div className="group relative overflow-hidden rounded-lg">
-      <img 
-        src={image} 
+      <img
+        src={image}
         alt={name}
         className="w-full h-96 object-cover object-center group-hover:scale-110 transition-transform duration-500"
       />
@@ -263,8 +259,8 @@ function PerformanceCard({ image, title, venue, date }) {
   return (
     <div className="group bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
       <div className="relative h-64 overflow-hidden">
-        <img 
-          src={image} 
+        <img
+          src={image}
           alt={title}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
