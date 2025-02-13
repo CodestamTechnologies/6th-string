@@ -1,4 +1,4 @@
-import { Calendar, Drum, Guitar, Instagram, MapPin, Mic, Music, PartyPopper, Phone, Youtube } from 'lucide-react';
+import { Calendar, Drum, Guitar, Instagram, MapPin, Mic, Mic2, Music, PartyPopper, Phone, Youtube } from 'lucide-react';
 import VideoDialog from './components/PerformanceButton';
 function App() {
 
@@ -82,7 +82,13 @@ function App() {
               image="/shubham_drums.jpg"
               name="Shubham"
               role="Drums"
-              instrument={<Guitar className="w-4 h-4" />}
+              instrument={<Drum className="w-4 h-4" />}
+            />
+            <TeamMember
+              image="/Jagdish.JPG"
+              name="Jagdish"
+              role="Singer"
+              instrument={<Mic2 className="w-4 h-4" />}
             />
           </div>
         </div>
